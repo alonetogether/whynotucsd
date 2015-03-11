@@ -1,21 +1,33 @@
 /* affix the navbar after scroll below header */
-$('#nav').affix({
-      offset: {
-        top: $('header').height()-$('#nav').height()
-      }
-});	
 
-/* highlight the top nav as scrolling occurs */
-$('body').scrollspy({ target: '#nav' })
+// $('#nav').affix({
+//       offset: {
+//         top: $('header').height()-$('#nav').height()
+//       }
+// });	
 
-/* smooth scrolling for scroll to top */
-$('.scroll-top').click(function(){
-  $('body,html').animate({scrollTop:0},1000);
-})
+// /* highlight the top nav as scrolling occurs */
+// $('body').scrollspy({ target: '#nav' })
 
-/* smooth scrolling for nav sections */
-$('#nav .navbar-nav li>a').click(function(){
-  var link = $(this).attr('href');
-  var posi = $(link).offset().top;
-  $('body,html').animate({scrollTop:posi},700);
+// /* smooth scrolling for scroll to top */
+// $('.scroll-top').click(function(){
+//   $('body,html').animate({scrollTop:0},1000);
+// })
+
+// /* smooth scrolling for nav sections */
+// $('#nav .navbar-nav li>a').click(function(){
+//   var link = $(this).attr('href');
+//   var posi = $(link).offset().top;
+//   $('body,html').animate({scrollTop:posi},700);
+// });
+
+var a = $("fixed-nav-bar").offset().top;
+
+$(document).scroll(function(){
+    if($(this).scrollTop() > a)
+    {   
+       $('fixed-nav-bar').css({"background":"red"});
+    } else {
+       $('fixed-nav-bar').css({"background":"transparent"});
+    }
 });
