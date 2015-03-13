@@ -26,7 +26,7 @@ var a = $("fixed-nav-bar").offset().top;
 $(document).scroll(function(){
     if($(this).scrollTop() > a)
     {   
-       $('fixed-nav-bar').css({"background":"red"});
+       $('fixed-nav-bar').css({"background":"blue"});
     } else {
        $('fixed-nav-bar').css({"background":"transparent"});
     }

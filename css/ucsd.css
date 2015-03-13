@@ -21,16 +21,17 @@
 }
 
 #section1 {
-	padding-top:0;
+	padding-top: 0px;
+	height: 666px;
 }
 
 #splashimg {
 	width:100%;
-	height:100%;
+	height: 100%;
 }
 
 #splashdiv {
-
+	height: 666px;
 }
 
 .fixed-nav-bar {
@@ -42,4 +43,43 @@
   height: 78px;
   background: transparent;
 
+}
+
+/*phases*/
+.content-wrapper {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#phases-title {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 10px;
+}
+#phases-title h1 {
+	display: inline-block;
+	margin: 0;
+	color: #85754d;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	z-index: 999;
+}
+
+.phase {
+	width: 28.3%;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 250px;
+}
+.phase-content {
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+#phase-1 h1 {
+	background: url(../../img/bigimg/01.jpg) center -44px no-repeat;
+	padding-top: 15px;
+	height: 185px;
 }
