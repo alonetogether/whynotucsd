@@ -20,11 +20,31 @@
 			<a class="ir" href="index.html" id="ucsd-link"> <img id="logopic" src="img/ucsdlogo.png">
 		</div>
 
+	<!-- navigation bar -->
+		<nav class="fixed-nav-bar">
+			<div id="header-wrapper nav">
+				<div id="site-header">
+					<a class="ir" href="index.html" id="ucsd-link"> <img id="logopic" src="img/ucsdlogo.png">
+			   		</a>
+			   	</div>
+			    <!-- navigation links -->
+			   	<ul id="navlinks">
+
+			   	</ul>	
+			</div>
+		</nav>
+	<!-- end navigation bar -->	
+
+
 		<div class="container">
 			<section id="section1" class="content bgcolor-1">
 				<div id="splashdiv">
 					<img id="splashimg" src="img/bigimg/01.jpg">
 				</div>
+
+
+				</span>
+
 			</section>
 
 			<section id="section2" class="content">
@@ -63,12 +83,122 @@
 			</section>
 			<section id= "section4" class="content bgcolor-7">
 				<h2>Section 4</h2>
+			<section class="content bgcolor-4">
+				<h2>History</h2>
+
+			</section>
+			<section class="content bgcolor-7">
+				<h2></h2>
+
 
 			</section>
 			<section class="content">
 				<h2>Section 5</h2>
+
 		</div>
 		<script src="js/1.11.2/jquery.min.js"></script>
 		<script src="js/navbar.js"></script>
+
+
+			</section>
+			<section class="content bgcolor-5">
+				<h2>Section 6</h2>
+
+			</section>
+			<section class="content">
+				<h2>Section 6</h2>
+
+			</section>
+			<section class="content bgcolor-3">
+				<h2>Section 7</h2>
+
+			</section>
+			<section class="content bgcolor-4">
+				<h2>Section 8</h2>
+
+			</section>
+			<section class="content">
+				<h2>Section 9</h2>
+
+			</section>
+			<section class="content bgcolor-6">
+				<h2>Section 10</h2>
+
+			</section>
+			<section class="content bgcolor-4">
+				<h2>Section 11</h2>
+
+			</section>
+			<section class="content">
+				<h2>Section 12</h2>
+
+			</section>
+			<section class="content bgcolor-8">
+				<h2>Section 13</h2>
+
+			</section>
+			<!-- Related demos -->
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+		/* affix the navbar after scroll below header */
+		$('#nav').affix({
+		      offset: {
+		        top: $('header').height()-$('#nav').height()
+		      }
+		});	
+
+		/* highlight the top nav as scrolling occurs */
+		$('body').scrollspy({ target: '#nav' })
+
+		/* smooth scrolling for scroll to top */
+		$('.scroll-top').click(function(){
+		  $('body,html').animate({scrollTop:0},1000);
+		})
+
+		/* smooth scrolling for nav sections */
+		$('#nav .navbar-nav li>a').click(function(){
+		  var link = $(this).attr('href');
+		  var posi = $(link).offset().top;
+		  $('body,html').animate({scrollTop:posi},700);
+		});
+
+		</script>
+		<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
 	</body>
 </html>
