@@ -2,10 +2,10 @@
 var a = $("#section2").offset();
 
 $(window).scroll(function(){
-    if($(window).scrollTop() + $('#navbar').height() > a.top) {   
+    if($(window).scrollTop() + $('.fixednavbar').height() > a.top) {   
 
-    	$('#navbar').css('background', 'blue');
+    	$('.fixednavbar').css('visibility', 'visible');
     } else {
-    	$('#navbar').css('background', 'green');
+    	$('.fixednavbar').css('visibility', 'none');
     }
 });
