@@ -15,10 +15,20 @@
 	position:relative;
 }
 
+/*SECTION CSS */
 #section1 {
 	padding-top: 0px;
-	height: 666px;
+	height:100vh;
 }
+
+#section2 {
+	height:100vh;
+
+}
+
+
+
+/*END SECTION CSS*/
 
 #splashimg {
 	max-width:100%;
@@ -33,7 +43,19 @@
 	width:100vw;
 	overflow-y:hidden;
 	overflow-x:hidden;
+	background: url(../img/bigimg/01.jpg);
+	background-position: center center;	
+	background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+	background-repeat:no-repeat;
+	background-color:red;
 }
+
+
+
 
 #navbar {
   top: 0;
