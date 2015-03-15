@@ -7,37 +7,71 @@
 		<title>Our UCSD</title>
 		<meta name="description" content="It's good to be at UCSD." />
 		<meta name="keywords" content="input, text, effect, focus, transition, interaction, inspiration, web design" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
+		<meta name="author" content="Freedom Fryers" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/ucsd.css" />
+<<<<<<< HEAD
 		<script src="js/jquery-1.11.0.min.js"></script>
+=======
+>>>>>>> c878358a09e526596e73e19f1299f9c210c596ac
 	</head>
 	<body>
+		<nav id = "navbar">
+		<!--<div id = "navbar" class="fixed-nav-bar">
+			<a class="ir" href="index.html" id="ucsd-link"> <img id="logopic" src="img/ucsdlogo.png">
+		</div>-->
+
+	<!-- navigation bar -->
 		<nav class="fixed-nav-bar">
-			<div id="header-wrapper">
+			<div id="header-wrapper nav">
 				<div id="site-header">
 					<a class="ir" href="index.html" id="ucsd-link"> <img id="logopic" src="img/ucsdlogo.png">
 			   		</a>
-			   	</div>	
+			   		<div id = "nav-link-wrapper">
+			   			<div id = "top-nav" class = .
+					   	<ul class = "topnav" id = "navtext">
+					   		<li>Phases</li>
+					   		<li>Real Students</li>
+					   		<li>History</li>
+					   		<li>How it All Started</li>
+					   	</ul>	
+			   		</div>
+			   	</div>
 			</div>
 		</nav>
 
-		<div class="container">
-			<!--<header class="codrops-header">
+	<!-- end navigation bar -->	
 
-			</header>-->
+	<!-- Splash Section begins here -->	
+
+
+
+		<div class="container">
 			<section id="section1" class="content bgcolor-1">
 				<div id="splashdiv">
-					<img id="splashimg" src="img/bigimg/01.jpg">
 				</div>
+
 			</section>
 
-			<section class="content">
-				<div class = "content-wrapper">
+
+	<!-- Splash Section ends here -->	
+
+	<!-- "intro" Section begins here -->	
+
+
+
+
+			<section id="section2" class="content">
+
+
+
+	
+
+				<!-- <div class = "content-wrapper">
+					
 					<div id = "phases-title">
 						<h2>Phases</h2>
 					</div>
@@ -64,27 +98,101 @@
 						</div>
 					</div>
 
-				</div>
-			</section>
+				</div>-->
 
-			<section class="content bgcolor-4">
-				<h2>Section 3</h2>
 
-			</section>
-			<section class="content bgcolor-7">
-				<h2>Section 4</h2>
+
 
 			</section>
-			<section class="content">
-				<h2>Section 5</h2>
 
-			</section>
-			<section class="content bgcolor-5">
-				<h2>Section 6</h2>
-
+<<<<<<< HEAD
 			</section>
 			<!-- Related demos -->
 
 		</div><!-- /container -->
+=======
+	<!-- "intro" Section ends here -->	
+
+	<!-- "calibratedelve" begins here -->
+
+
+			<section id="section3" class="content bgcolor-4">
+				<h2>Section 3</h2>
+
+		<div id="section3-container">
+			<div class="streak-container">
+			<!-- image goes here -->
+			<h1>
+			Calibrate
+			</h1>
+			</div>
+				<div class="section3-content">
+				</div>
+
+			<div class="streak-container">
+			<!-- image goes here -->
+			<h1>
+			Delve
+			</h1>
+			</div>
+				<div class="section3-content">
+				</div>			
+				
+			<div class="streak-container">
+			<!-- image goes here -->
+			<h1>
+			Extend
+			</h1>			
+			</div>
+				<div class="section3-content">
+				</div>				
+		</div>		
+
+			</section>
+
+	<!-- "calibratedelve" ends here -->
+			
+			<section id= "section4" class="content bgcolor-7">
+				<h2>Section 4</h2>
+			<section class="content bgcolor-4">
+				<h2>History</h2>
+
+			</section>
+			<section class="content bgcolor-7">
+				<h2></h2>
+
+
+			</section>
+
+
+
+			<!-- Related demos -->
+
+		</div><!-- /container -->
+		<script>
+		/* affix the navbar after scroll below header */
+		$('#nav').affix({
+		      offset: {
+		        top: $('header').height()-$('#nav').height()
+		      }
+		});	
+
+		/* highlight the top nav as scrolling occurs */
+		$('body').scrollspy({ target: '#nav' })
+
+		/* smooth scrolling for scroll to top */
+		$('.scroll-top').click(function(){
+		  $('body,html').animate({scrollTop:0},1000);
+		})
+
+		/* smooth scrolling for nav sections */
+		$('#nav .navbar-nav li>a').click(function(){
+		  var link = $(this).attr('href');
+		  var posi = $(link).offset().top;
+		  $('body,html').animate({scrollTop:posi},700);
+		});
+
+		</script>
+>>>>>>> c878358a09e526596e73e19f1299f9c210c596ac
 	</body>
 </html>
