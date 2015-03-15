@@ -14,12 +14,11 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/ucsd.css" />
-		<!--[if IE]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	</head>
 	<body>
+		<div id = "navbar" class="fixed-nav-bar">
+			<a class="ir" href="index.html" id="ucsd-link"> <img id="logopic" src="img/ucsdlogo.png">
+		</div>
 
 	<!-- navigation bar -->
 		<nav class="fixed-nav-bar">
@@ -36,10 +35,8 @@
 		</nav>
 	<!-- end navigation bar -->	
 
-		<div class="container">
-			<!--<header class="codrops-header">
 
-			</header>-->
+		<div class="container">
 			<section id="section1" class="content bgcolor-1">
 				<div id="splashdiv">
 					<img id="splashimg" src="img/bigimg/01.jpg">
@@ -50,7 +47,7 @@
 
 			</section>
 
-			<section class="content">
+			<section id="section2" class="content">
 				<div class = "content-wrapper">
 					<div id = "phases-title">
 						<h2>Phases</h2>
@@ -77,10 +74,15 @@
 							<h1 class="phase-content">Blaaahh</h1>
 						</div>
 					</div>
-
 				</div>
 			</section>
 
+			<section id="section3" class="content bgcolor-4">
+				<h2>Section 3</h2>
+
+			</section>
+			<section id= "section4" class="content bgcolor-7">
+				<h2>Section 4</h2>
 			<section class="content bgcolor-4">
 				<h2>History</h2>
 
@@ -88,9 +90,15 @@
 			<section class="content bgcolor-7">
 				<h2></h2>
 
+
 			</section>
 			<section class="content">
 				<h2>Section 5</h2>
+
+		</div>
+		<script src="js/1.11.2/jquery.min.js"></script>
+		<script src="js/navbar.js"></script>
+
 
 			</section>
 			<section class="content bgcolor-5">
