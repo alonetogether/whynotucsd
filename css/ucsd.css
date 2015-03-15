@@ -66,6 +66,7 @@
 
 .fixed-nav-bar {
 	width:100%;
+
 }
 
 #headliner {
@@ -86,10 +87,24 @@
 .fixed-nav-bar {
 	position:fixed;
 	background:rgba(50,50,50,1);
-	box-shadow: 0 10px 20px rgba(50, 50, 50, .5);
 	height: 60px;
 	width: 100%;
 }
+
+.topnav {
+	float:right;
+}
+
+.topnav li {
+	display:inline;
+	color:white;
+	margin-left:2em;
+}
+
+
+
+
+/* 
 
 #left-nav{
 	height:100%;
@@ -100,11 +115,7 @@
 	float: left;
 }
 
-.topnav li {
-	display:inline;
-	color:white;
-	margin-left:2em;
-}
+
 #right-nav {
 	height: 100%;
 	padding: 0;
@@ -113,6 +124,10 @@
 	position: relative;
 	float: right;
 
+}
+
+#nav-link-wrapper {
+	display:inline;
 }
 
 .navlink, .navlink a {
@@ -133,7 +148,7 @@ nav {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-
+*/
 
 /*phases*/
 .content-wrapper {
