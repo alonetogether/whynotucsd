@@ -24,7 +24,7 @@ body {
 }
 
 a {
-	color: #2fa0ec;
+	color: #FFFFFF;
 	text-decoration: none;
 	outline: none;
 }
@@ -41,11 +41,11 @@ a:hover, a:focus {
 
 .content {
 	font-size: 150%;
-	padding: 3em 0;
+	/*padding: 3em 0;*/
 }
 
 .content h2 {
-	margin: 0 0 2em;
+	margin: auto;
 	opacity: 0.1;
 }
 
