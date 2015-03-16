@@ -1,4 +1,6 @@
-
+body {
+	position:relative;
+}
 
 #logopic{
 	width: 10.4em;
@@ -64,25 +66,6 @@
 
 /* NAV BAR STARTS HERE */
 
-.fixed-nav-bar {
-	width:100%;
-
-}
-
-#headliner {
-	color: white;
-	font: bold 24px/45px Helvetica, sans-serif;
-	line-height: 45px;
-	letter-spacing: -1px;
-	background: rgba(0, 0, 0, 0.7);
-	padding: 10px;
-	position: absolute;
-	top: 200px;
-	left: 0;
-	width: 100%;
-
-}
-
 
 .fixed-nav-bar {
 	position:fixed;
@@ -99,6 +82,7 @@
 	display:inline;
 	color:white;
 	margin-left:2em;
+	font-size:1em;
 }
 
 
@@ -149,6 +133,35 @@ nav {
 	border-radius: 5px;
 }
 */
+
+/* NAV BAR ENDS HERE */
+
+/* RESPONSIVE CSS */
+
+@media screen and (max-width: 750px) {
+	.topnav {
+		visibility:hidden;
+	}
+}
+
+
+
+/* END RESPONSIVE CSS*/
+
+
+#headliner {
+	color: white;
+	font: bold 24px/45px Helvetica, sans-serif;
+	line-height: 45px;
+	letter-spacing: -1px;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+
+}
 
 /*phases*/
 .content-wrapper {

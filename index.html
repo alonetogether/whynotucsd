@@ -25,10 +25,10 @@
 			   		
 			   		<div id = "nav-link-wrapper">
 					   	<ul class = "topnav" id="navtext">
-					   		<li>Phases</li>
-					   		<li>Real Students</li>
-					   		<li>History</li>
-					   		<li>How it All Started</li>
+					   		<li><a href = "#section3">Phases</a></li>
+					   		<li><a href="#section4">History</a></li>
+					   		<li><a href="#section5">Real Students</a></li>
+					   		<li><a href="#section6">How it All Started</a></li>
 					   	</ul>	
 
 			   	</div>
@@ -136,35 +136,29 @@
 				<h2>History</h2>
 
 			</section>
+			</section>
+
+			<section id= "section5" class="content bgcolor-8">
+				<h2>Section 5</h2>
+			<section class="content bgcolor-4">
+				<h2>Real Students</h2>
+
+			</section>
+			</section>
+
+			<section id= "section6" class="content bgcolor-9">
+				<h2>Section 6</h2>
+			<section class="content bgcolor-5">
+				<h2>How it All Started</h2>
+
+			</section>
+			</section>
 
 
 
 			<!-- Related demos -->
 
 		</div><!-- /container -->
-		<script>
-		/* affix the navbar after scroll below header */
-		$('#nav').affix({
-		      offset: {
-		        top: $('header').height()-$('#nav').height()
-		      }
-		});	
 
-		/* highlight the top nav as scrolling occurs */
-		$('body').scrollspy({ target: '#nav' })
-
-		/* smooth scrolling for scroll to top */
-		$('.scroll-top').click(function(){
-		  $('body,html').animate({scrollTop:0},1000);
-		})
-
-		/* smooth scrolling for nav sections */
-		$('#nav .navbar-nav li>a').click(function(){
-		  var link = $(this).attr('href');
-		  var posi = $(link).offset().top;
-		  $('body,html').animate({scrollTop:posi},700);
-		});
-
-		</script>
 	</body>
 </html>
